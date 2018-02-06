@@ -1,0 +1,420 @@
+/*********** BASE STYLES ************/
+@font-face{
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans-Regular.ttf') ; 
+}
+
+@font-face{
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Black.ttf') ; 
+}
+
+@font-face{
+	font-family: 'LoraItalic';
+	src: url('../fonts/Lora-Italic.ttf') ; 
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 16px;
+	width: 100% !important;
+	margin-right: 0;
+	padding-right: 0;
+	display: block;
+}
+
+body{
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	background: #fafafa;
+	
+}
+
+.container{
+	width: 90%;
+	margin: 0 auto;
+	z-index: 0;
+}
+
+a{
+	text-decoration: none;
+	display: block;
+	color: #000;
+	cursor: pointer;
+}
+
+li{
+	list-style-type: none;
+	cursor: pointer;
+}
+
+section header{
+	position: relative;
+
+}
+
+section header h2{
+	font-family: Roboto, sans-serif;
+	text-align: center;
+	margin-bottom: 50px;
+	font-size: 1.9rem;
+	color: #222;
+	padding: 20px 0px 30px 0px;
+}
+
+section header h2::after{
+	content: "";
+	display: block;
+	width: 7.02%;
+	height: 4px;
+	position: absolute;
+	bottom: 0;
+	left: 48%;
+	background: #dad8a7;
+}
+
+.active, header a:hover, header a:focus{
+	color: #44716a;
+	
+}
+
+nav > ul > li > a:hover{
+	transform: translateY(-3.8px);
+}
+
+label[for="toggle"], input[id="toggle"]{
+	display: none;
+}
+
+
+
+/************ BANNER ***********/
+#banner{
+	position: relative;
+	height: 620px;
+	background-position: 0px -400px;
+	overflow: hidden;
+	width: 100%;
+}
+
+#banner picture source{
+	position: absolute;
+	//top: -55%;
+	max-width: 100%;
+}
+
+.overlay{
+	background-color: rgba(0,0,0,0.45);
+	height: 100%;
+	width: 60%;
+	transform: skewX(-25deg);
+	position: absolute;
+	top: 0;
+	left: -10%;
+}
+
+#banner-content{
+	text-align: left;
+	color: #fafafa;
+	position: absolute;
+	top: 24.3%;
+	width: 60%;
+}
+
+#banner-content p{
+	line-height: 2rem;
+	font-size: 1.4rem;
+	color: rgba(250,250,250,0.85);
+	width: 80%;
+}
+
+#banner-header{
+	font-size: 2.8rem;
+	line-height: 3rem;
+	word-spacing: 0.1rem;
+	margin-bottom: 15px;
+}
+
+#banner .container div{
+	width: 100%;
+}
+.ghost-button{
+	margin-top: 2%;
+	border: 2px solid #fafafa;
+	padding: 10px;
+	color: #fafafa;
+	width: 145.69px;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	background: transparent;
+	transition: all 0.3s ease-in;
+	box-shadow: 2px 5px 2px transparent;
+	position: relative;	
+	top: 20px;
+}
+
+.ghost-button:hover{
+	background: #fafafa;
+	color: #000;
+}
+
+
+
+/*********** SERVICES ***********/
+#services{
+	background: url('../images/circles-light.png');
+	background-attachment: fixed;
+	height: 600px;
+	padding: 50px 20px;
+}
+#services .container{
+	background-position: fixed;
+	
+}
+
+#services main{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	width: 100%;
+}
+
+#services header{
+	text-align: center;
+	margin-bottom: 50px;
+}
+#services .box{
+	width: 30%;
+	background: #dad8a7;
+	height: auto;
+	box-shadow: 3px 5px 10px 4px rgba(68,68,68,0.25), -2px 0px 8px 2px rgba(68,68,68,0.3);
+	padding: 10px 12px;
+	border-radius: 5px;
+	transition: box-shadow 0.15s ease;
+	position: relative;
+
+}
+
+#services .box p{
+	text-align: left;
+	color: #14110c;
+	margin-bottom: 30%;
+}
+
+#services .box:hover{
+	box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.3), -2px 0px 4px 0px rgba(0,0,0,0.3);
+}
+
+.sub-headings, .box{
+	text-align: center;
+}
+
+.sub-headings{
+	font-size: 1.15rem;
+	line-height: 1.8rem;
+	margin: 10px 0px;
+	color:	#333;
+	font-family: 'Roboto', sans-serif;
+}
+
+.la{
+	color: #44716a;
+	background: transparent;
+}
+
+
+
+/*********** TESTIMONIALS ***********/
+#testimonials{
+	height: 650px;
+	text-align: center;
+}
+#testimonials header h2{
+	padding-top: 50px;
+}
+
+.testimonial-text{
+	font-size: 20px;
+	line-height: 1.5; 
+	width: 80%;
+	margin: 10px auto;
+	padding: 20px;
+	font-family: 'LoraItalic', serif;
+	color: #222;
+	position: relative
+}
+
+.quote:first-of-type{
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	color: #ccc;
+}
+.quote:last-of-type{
+	position: absolute;
+	bottom: -10px;
+	right: -10px;
+	color: #ccc;
+}
+
+blockquote footer p:first-of-type{
+	font-size: 18px;
+	margin-top: 50px;
+	color: #44716a;
+	font-weight: bold;
+}
+
+blockquote footer p:last-of-type{
+	font-size: 15px;
+	color: #555;
+	margin-bottom: 50px;
+	
+}
+
+blockquote footer p:last-of-type::after{
+	content: "";
+	display: block;
+	
+}
+
+.avatar img{
+	display: block;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+	margin: 0px auto;
+	border-radius: 67.5px;
+}
+
+
+
+/*********** MEDIA QUERIES ***********/
+/* Tablets */
+@media screen and (max-width: 768px){
+	#banner, #services, #testimonials{
+		width: 100%;
+	}
+
+	.overlay{
+		width: 100%;
+		transform: skewX(0deg);
+		left: 0;
+	}
+
+	#banner{
+		height: auto;
+	}
+
+	#banner-header{
+		line-height: 3.5rem;
+	}
+
+	#banner-content{
+		width: 100%;
+		top: 20%;
+	}
+
+	#banner-content p{
+		width: 90%;
+		line-height: 2rem;
+		font-size: 1.3em;
+	}
+
+	#banner-header{
+		font-size: 2.6em;
+	}
+
+	#services{
+		height: auto;
+	}
+
+	#services main{
+		display: block;
+		margin-bottom: 50px;
+	}
+
+	#services .box{
+		width: 80%;
+		margin: 0px auto 30px;
+		display: block;
+		height: 10%;
+	}
+
+	.box i{
+		margin-top: 5%;
+	}
+
+	.box h4{
+		font-size: 1.3rem;
+	}
+
+	.box p{
+		font-size: 18px;
+		line-height: 1.8;
+	}
+
+	#testimonials{
+		height: auto;
+		margin-bottom: 50px;
+	}
+
+	.testimonial-text{
+		width: 90%;
+		margin-top: 40px;
+	}
+
+}
+
+/* Mobile Phones */
+@media screen and (max-width: 480px){
+	#brand{
+		font-size: 1.9rem;
+	}
+
+	#banner-header{
+		line-height: 2.8rem;
+		font-size: 2em;
+		margin-bottom: 5px;
+	}
+
+	#banner-content p{
+		line-height: 1.9rem;
+		font-size: 1em;
+		margin-bottom: 0;
+	}
+
+	section header h2:after{
+		width: 15%;
+		left: 45%;
+	}
+
+	#services .box{
+		width: 95%;
+	}
+
+	.ghost-button{
+		margin: -2% auto 0px;
+		font-size: 0.85em;
+		padding: 0.85%;
+		width: 35%;
+	}
+}
+
+@media screen and (max-width: 330px){
+	#banner-header{
+		line-height: 2.5rem;
+		font-size: 1.6em;
+		margin-bottom: 5px;
+	}
+
+	#banner-content p{
+		line-height: 1.6rem;
+		font-size: 0.85em;
+		margin-bottom: 0;
+	}
+}

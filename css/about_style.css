@@ -1,0 +1,267 @@
+/*********** BASE STYLES ************/
+@font-face{
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans-Regular.ttf') ; 
+}
+
+@font-face{
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Black.ttf') ; 
+}
+
+@font-face{
+	font-family: 'LoraItalic';
+	src: url('../fonts/Lora-Italic.ttf') ; 
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 16px;
+	width: 100%;
+}
+
+body{
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.7em;
+	background: #fafafa;
+	background: url('../images/circles-light.png')
+}
+
+.container{
+	width: 90%;
+	margin: 0 auto;
+	z-index: 0;
+}
+
+a{
+	text-decoration: none;
+	display: block;
+	color: #000;
+	cursor: pointer;
+}
+
+li{
+	list-style-type: none;
+	cursor: pointer;
+}
+
+section header{
+	position: relative;
+
+}
+
+section header h2{
+	font-family: Roboto, sans-serif;
+	text-align: center;
+	margin-bottom: 50px;
+	font-size: 1.9rem;
+	color: #222;
+	padding: 20px 0px 30px 0px;
+}
+
+section header h2::after{
+	content: "";
+	display: block;
+	width: 70px;
+	height: 4px;
+	position: absolute;
+	bottom: 0;
+	left: 48%;
+	background: #dad8a7;
+}
+
+.active, header a:hover, header a:focus{
+	color: #44716a;
+	
+}
+
+nav > ul > li > a:hover{
+	transform: translateY(-3.8px);
+}
+
+
+label[for="toggle"], input[id="toggle"]{
+	display: none;
+}
+
+
+
+/****** MAIN SECTION **********/
+#about-us{
+	padding: 20px;
+	margin-bottom: 30px;
+}
+
+#about-us main > div ~ *{
+	margin-top: 50px;
+}
+
+#about-us h2{
+	text-align: center;
+	font-family: Roboto, sans-serif;
+	color: #333;
+	text-transform: uppercase;
+	font-size: 1.9rem;
+	letter-spacing: 0.1rem;
+	margin: 80px auto 50px;
+	width: 100%;
+	position: relative;
+}
+
+#about-us h2::before{
+	content: "";
+	display: block;
+	width: 15%;
+	height: 12%;
+	position: absolute;
+	left: 22.5%;
+	top: 50%;
+	background: #555;
+}
+
+#about-us h2::after{
+	content: "";
+	display: block;
+	width: 15%;
+	height: 12%;
+	position: absolute;
+	right: 22.5%;
+	top: 50%;
+	background: #555;
+}
+.about-boxes:nth-child(odd){
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.about-boxes:nth-child(odd) > div{
+	background: #ddd;
+	width: 65%;
+	padding: 15px;
+	position: relative;
+	overflow: hidden;
+	font-size: 1.1rem;
+}
+
+.about-boxes:nth-child(odd) > picture{
+	width: 33%;
+}
+
+.about-boxes:nth-child(odd) img{
+	max-width: 100%;
+	height: 100%;
+}
+
+#about-us .about-boxes:nth-of-type(2){
+	background: #ddd;
+	padding: 15px;
+	position: relative;
+	overflow: hidden;
+	font-size: 1.1rem;
+}
+
+.about-boxes h3{
+	font-size: 1.8rem;
+	font-family: Arial, sans-serif;
+	margin: 10px 0px 20px;
+	overflow: hidden;
+	width: 100%;
+	z-index: 3;
+	color: #fafafa;
+	position: relative;
+	top: -12px;
+}
+
+.title-cover{
+	display: block;
+	height: 50px;
+	position: absolute;
+	left: -20px;
+	top: 0;
+	width: 47%;
+	transform: skewX(30deg);
+	background: #447a6a;
+	z-index: 2;
+}
+
+
+
+/*********** MEDIA QUERIES ***********/
+/* Tablets */
+@media screen and (max-width: 768px){
+	#about-us h2::before{
+		left: 15%;
+	}
+
+	#about-us h2::after{
+		right: 15%;
+	}
+
+	#about-us main, #about-us main > *{
+		display: block;
+		width: 100%;
+	}
+
+	.about-boxes:nth-child(odd) > div{
+		width: 100%;
+	}
+
+	.about-boxes picture source{
+		display: block;
+		margin-top: 50px;
+	}
+
+	.title-cover{
+		width: 70%;
+	}
+}
+
+
+/* Mobile Phones */
+@media screen and (max-width: 480px){
+	.about-boxes h3{
+		text-align: center;
+	}
+
+	#about-us h2{
+		font-size: 1.7rem;
+	}
+
+	#about-us h2::before{
+		left: 5%;
+		width: 12%;
+	}
+
+	#about-us h2::after{
+		right: 5%;
+		width: 12%;
+	}
+
+	.title-cover{
+		width: 100%;
+		left: 0;
+		transform: skewX(0deg);
+	}
+
+}
+
+@media screen and (max-width: 320px){
+		.about-boxes h3{
+			font-size: 1.6rem;
+		}
+
+		#about-us h2::before{
+			left: 0;
+		}
+
+		#about-us h2::after{
+			right: 0;
+		}
+}

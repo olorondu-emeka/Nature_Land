@@ -1,0 +1,122 @@
+/*********** MEDIA QUERIES ***********/
+
+/* Tablets */
+@media screen and (max-width: 768px){
+	/* NAVIGATION */
+	.container{
+		width: 92%;
+	}
+
+	section header h2:after{
+		width: 10%;
+		left: 45.8%;
+	}
+
+	#nav-header .container{
+		margin: 0;
+		width: 100%;
+		padding: 0;
+	}
+	nav{
+		display: block;
+		width: 100%;
+		padding: 0;
+	}
+	#brand{
+		width: 100%;
+		padding: 15px 10px 20px;
+	}
+
+	nav > ul{
+		display: block;
+		overflow: hidden;
+		width: 100%;
+		background: #dad891;
+		margin: 0;
+		position: absolute;
+		opacity: 0.9;
+		padding: 0px 10px;
+		max-height: 0px;
+		transition: max-height 0.4s;
+	}
+
+	nav > ul > li{
+		padding: 0;
+	}
+
+	nav > ul > li > a, .dropdown-wrapper{
+		text-align: left;
+		padding: 15px;
+
+	}
+
+	nav > ul > li ~ li, .dropdown-wrapper{
+		border-top: 1px solid #999646;
+
+	}
+
+	nav > ul > li > a:hover{
+		transform: none;
+		color: #fafafa;
+		transition: none;
+	}
+
+	nav li:hover, nav li:active{
+		background: #44716a;
+		color: #fafafa;
+		opacity: 1;
+		z-index: 1;
+	}
+
+	label[for="toggle"]{
+		display: block;
+		position: absolute;
+		right: 25px;
+		top: 18px;
+		z-index: 1;
+		cursor: pointer;
+	}
+
+	label[for="toggle"]::after{
+		content: "";
+		display: block;
+		clear: both;
+		font-weight: bold;
+	}
+
+	input[id="toggle"]:checked + ul{
+		max-height: 219px;
+	}
+
+
+	/* FOOTER */
+	#footer{
+		height: auto;
+	}
+
+	.footer-text-item > li{
+		width: 40%;
+		margin-top: 20px;
+	}
+
+	.footer-text-item{
+		margin-bottom: 200px;
+		margin-top: 0px;
+	}
+
+}
+
+
+
+/* Mobile Phones */
+@media screen and (max-width: 480px){
+	#brand{
+		font-size: 1.9rem;
+	}
+}
+
+@media screen and (max-width: 400px){
+	#footer hr{
+		bottom: 150px;
+	}
+}

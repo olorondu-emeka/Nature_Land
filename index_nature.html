@@ -14,7 +14,10 @@
 		<!-- Font-awesome-->
 		<link rel="stylesheet" type="text/css" href="vendors/font-awesome/css/font-awesome.css">
 		<link rel="stylesheet" type="text/css" href="vendors/line-awesome/css/line-awesome.css">
-
+		
+		<!--Javascript files-->
+		<script src="js/jquery-3.3.1.js"></script>
+		<script src="js/nature_land.js"></script>
 	</head>
 	<body>
 	
@@ -25,10 +28,10 @@
 						<h1 id="brand">Nature <span id="brand-style">Spot</span></h1>
 						<label for="toggle">&#9776;</label>
 						<input type="checkbox" id="toggle">
-						<ul>
+						<ul id="main-nav">
 							<li><a href="index_nature.html" class="active">Home</a></li>
-							<li><a href="pages/about.html">About</a></li>
-							<li><a href="pages/contact_us.html">Contact</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact_us.html">Contact</a></li>
 							<div class="dropdown-wrapper">
 								<li><a href="">Account <span class="fa fa-caret-down"></span></a>
 									<ul class="dropdown-menu">
@@ -41,77 +44,77 @@
 					</nav>
 				</div>
 		</header>
-
-		<!-- Banner -->
-		<section id="banner">
-			<picture>
-				<source srcset="images/travel_small.jpeg" media="(max-width: 480px)">
-				<source srcset="images/travel_medium.jpeg" media="(max-width: 768px)">
-				<img srcset="images/travel_big.jpeg">
-			</picture>
-			
-			<div class="overlay"></div>
-			<div id="banner-content">
-				<div class="container">
-					<h2 id="banner-header">Discover the wonders of Nature</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elit orci, faucibus sit amet consectetur nec, sodales et purus. In commodo nibh nisi</p>
-					<div>
-						<a href="" class="ghost-button ">Learn more</a>
-					</div>
-				</div>
-			</div>		
-		</section>
-
-		<!--Services-->
-		<section id="services">
-			<div class="container">
-				<header>
-					<h2 class="title">Our Services</h2>
-				</header>
-				<main>
-					<div class="box">
-						<i class="la la-cutlery la-4x"></i>
-						<h4 class="sub-headings">Resturant</h4>
-						<p>Cras sed ante finibus, dapibus purus fringilla, dapibus est. Mauris euismod mattis felis sit amet auctor. In enim neque, molestie id massa a lobortis pulvinar nisl.</p>
-					</div>
-					<div class="box ">
-						<i class="la la-plane la-4x"></i>
-						<h4 class="sub-headings">Travel & Tourism</h4>
-						<p>Cras sed ante finibus, dapibus purus fringilla, dapibus est. Mauris euismod mattis felis sit amet auctor. In enim neque, molestie id massa a lobortis pulvinar nisl.</p>
-					</div>
-					<div class="box">
-						<i class="la la-shopping-cart la-4x"></i>
-						<h4 class="sub-headings">Beauty Products</h4>
-						<p>Cras sed ante finibus, dapibus purus fringilla, dapibus est. Mauris euismod mattis felis sit amet auctor. In enim neque, molestie id massa a lobortis pulvinar nisl.</p>
-					</div>
-				</main>
-			</div>
-		</section>
-
-		<!-- Testimonials-->
-		<section id="testimonials">
-			<div class="container">
-				<header>
-					<h2>Testimonials</h2>
-				</header>
-				<main>	
-					<blockquote>
-						<div class="avatar">
-							<img src="images/web_person.jpeg" alt="someone">
+		<div id="main-page-content">
+			<!-- Banner -->
+			<section id="banner">
+				<picture>
+					<source srcset="images/travel_small.jpeg" media="(max-width: 480px)">
+					<source srcset="images/travel_medium.jpeg" media="(max-width: 768px)">
+					<img srcset="images/travel_big.jpeg">
+				</picture>
+				
+				<div class="overlay"></div>
+				<div id="banner-content">
+					<div class="container">
+						<h2 id="banner-header">Discover the wonders of Nature</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elit orci, faucibus sit amet consectetur nec, sodales et purus. In commodo nibh nisi</p>
+						<div>
+							<a href="" class="ghost-button ">Learn more</a>
 						</div>
-						<p class="testimonial-text"><span class="quote fa fa-quote-left"></span> Suspendisse ultricies dignissim tellus ut porttitor. Morbi purus dolor, suscipit id ornare sed, fringilla quis diam. Pellentesque lacinia sodales arcu nec fermentum ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur.<span class="quote fa fa-quote-right"></p>
-						<footer>
-							<p>Someone Famous</p>
-							<p> Executive Director - Any Company Ltd</p>
-						</footer>
-					</blockquote>
-				</main>
-			</div>
-		</section>
+					</div>
+				</div>		
+			</section>
 
+			<!--Services-->
+			<section id="services">
+				<div class="container">
+					<header>
+						<h2 class="title">Our Services</h2>
+					</header>
+					<main>
+						<div class="box">
+							<i class="la la-cutlery la-4x"></i>
+							<h4 class="sub-headings">Resturant</h4>
+							<p>Cras sed ante finibus, dapibus purus fringilla, dapibus est. Mauris euismod mattis felis sit amet auctor. In enim neque, molestie id massa a lobortis pulvinar nisl.</p>
+						</div>
+						<div class="box ">
+							<i class="la la-plane la-4x"></i>
+							<h4 class="sub-headings">Travel & Tourism</h4>
+							<p>Cras sed ante finibus, dapibus purus fringilla, dapibus est. Mauris euismod mattis felis sit amet auctor. In enim neque, molestie id massa a lobortis pulvinar nisl.</p>
+						</div>
+						<div class="box">
+							<i class="la la-shopping-cart la-4x"></i>
+							<h4 class="sub-headings">Beauty Products</h4>
+							<p>Cras sed ante finibus, dapibus purus fringilla, dapibus est. Mauris euismod mattis felis sit amet auctor. In enim neque, molestie id massa a lobortis pulvinar nisl.</p>
+						</div>
+					</main>
+				</div>
+			</section>
+
+			<!-- Testimonials-->
+			<section id="testimonials">
+				<div class="container">
+					<header>
+						<h2>Testimonials</h2>
+					</header>
+					<main>	
+						<blockquote>
+							<div class="avatar">
+								<img src="images/web_person.jpeg" alt="someone">
+							</div>
+							<p class="testimonial-text"><span class="quote fa fa-quote-left"></span> Suspendisse ultricies dignissim tellus ut porttitor. Morbi purus dolor, suscipit id ornare sed, fringilla quis diam. Pellentesque lacinia sodales arcu nec fermentum ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur.<span class="quote fa fa-quote-right"></p>
+							<footer>
+								<p>Someone Famous</p>
+								<p> Executive Director - Any Company Ltd</p>
+							</footer>
+						</blockquote>
+					</main>
+				</div>
+			</section>
+		</div>
 		<!-- Footer-->
 		<footer id="footer">
 			<div class="container">

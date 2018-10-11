@@ -1,0 +1,14 @@
+{
+  "name": "nature_land",
+  "version": "1.0.0",
+  "description": "first nodejs app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "emeka",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
